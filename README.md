@@ -1,1 +1,1 @@
-# Click: [sunjiangxin.github.io](https://sunjiangxin.github.io/website)
+# Click: [sunjiangxin.github.io/website](https://sunjiangxin.github.io/website)
