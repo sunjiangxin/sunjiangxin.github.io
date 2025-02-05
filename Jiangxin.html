@@ -1,0 +1,394 @@
+<html><style id="videoRecorder-eaoehmpa">
+            ._ext_highlight {
+                outline: 3px solid rgba(255, 0, 0, 0.5);
+                outline-offset: -3px;
+                transition: all 0.1s ease;
+                z-index: 2147483647;
+            }
+            ._ext__floating_popup {
+                position: fixed;
+                top: 80px;
+                right: 30px;
+            
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                border-radius: 2px;
+                margin: auto;
+                height: 30px;
+                white-space: nowrap;
+                padding: 8px;
+                z-index: 2147483647;
+            }
+            
+            ._ext__floating_popup > button {
+                margin-left: 5px;
+                color: black;
+                background-color: white;
+                border: 2px solid #e7e7e7;
+                cursor: pointer;
+            }
+        </style><style id="countdown-eaoehmpa">
+        .countdown-eaoehmpa-button {
+            background: 0 0;
+            border: none;
+            box-sizing: border-box;
+            color: #ffffff;
+            cursor: pointer;
+            display: block;
+            font-family: 'Open-Sans';
+            font-size: 12px;
+            height: auto;
+            line-height: 1;
+            margin: 0 auto;
+            padding: 0 12px;
+        }
+        .countdown-eaoehmpa-button:focus {
+            background: 0 0;
+        }
+        .countdown-eaoehmpa-button:hover {
+            background: 0 0;
+        }
+        .countdown-eaoehmpa {
+            background: rgba(59, 59, 59, 0.8);
+            border-radius: 4px;
+            color: #ffffff;
+            left: 50%;
+            padding: 14px 14px 10px;
+            position: fixed;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 110000;
+        }
+        .countdown-eaoehmpa.capture-delayed {
+            left: 50px;
+            top: 50px;
+            transform: translate(0, 0);
+        }
+        .countdown-eaoehmpa-content {
+            height: 120px;
+            position: relative;
+            width: 120px;
+        }
+        .countdown-eaoehmpa-progress {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+        .countdown-eaoehmpa-progress svg {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+        .countdown-eaoehmpa-sep {
+            background: #758386;
+            height: 1px;
+            margin: 7px 0;
+        }
+        .countdown-eaoehmpa-cancel .nsc-button {
+            color: #ffffff;
+            display: block;
+            font-size: 14px;
+            padding: 0 3px;
+            text-align: center;
+            width: 100%;
+        }
+        </style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="google-site-verification" content="Ep23zzf6RP-Lk5jA8WMBAoffjZVHoEsGWOyZqE6QHjA">
+	
+
+  <meta name="viewport" content="width=800">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    
+    a {
+      color: #1772d0;
+      text-decoration: none;
+    }
+    
+    a:focus,
+    a:hover {
+      color: #f09228;
+      text-decoration: none;
+    }
+    
+    body,
+    td,
+    th,
+    tr,
+    p,
+    a {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px
+    }
+    
+    strong {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+    
+    heading {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 22px;
+    }
+    
+    papertitle {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 700
+    }
+    
+    name {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 32px;
+    }
+    
+    .one {
+      width: 160px;
+      height: 160px;
+      position: relative;
+    }
+    
+    .two {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+    
+    .fade {
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+    
+    span.highlight {
+      background-color: #ffffd0;
+    }
+  </style>
+  <link rel="icon" type="image/jpg" href="./Jiangxin_files/icon.jpg">
+  <title>Jiangxin Sun</title>
+  
+  <link href="./Jiangxin_files/css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <iframe id="dl-eaoehmpa" src="./Jiangxin_files/downloading.html" style="display: none;"></iframe><iframe id="dl-rec-eaoehmpa" src="./Jiangxin_files/recording.html" allow="camera *; microphone *; display-capture *" style="display: none;"></iframe><div class="region-selector-container"><template shadowrootmode="open"><div class="region-selector-overlay" style="position: fixed; top: 0px; left: 0px; width: 100vw; height: 100vh; background: transparent; z-index: 2147483646; display: none; cursor: default; user-select: none;"></div><div class="region-selector-box" style="position: fixed; padding: 4px; top: 25%; left: 25%; width: 50%; height: 50%; border: 2px dashed rgb(255, 255, 255); background: transparent; z-index: 2147483647; display: none; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 100vmax; cursor: move;"><div style="width: 100%; height: 100%; background: transparent; pointer-events: none; cursor: none;"></div><div class="handle top-left" style="position: absolute; width: 8px; height: 8px; background: white; border: 1px solid rgb(51, 51, 51); border-radius: 50%; top: -6px; left: -6px; cursor: nw-resize;"></div><div class="handle top" style="position: absolute; width: 8px; height: 8px; background: white; border: 1px solid rgb(51, 51, 51); border-radius: 50%; top: -6px; left: 50%; margin-left: -6px; cursor: n-resize;"></div><div class="handle top-right" style="position: absolute; width: 8px; height: 8px; background: white; border: 1px solid rgb(51, 51, 51); border-radius: 50%; top: -6px; right: -6px; cursor: ne-resize;"></div><div class="handle right" style="position: absolute; width: 8px; height: 8px; background: white; border: 1px solid rgb(51, 51, 51); border-radius: 50%; top: 50%; right: -6px; margin-top: -6px; cursor: e-resize;"></div><div class="handle bottom-right" style="position: absolute; width: 8px; height: 8px; background: white; border: 1px solid rgb(51, 51, 51); border-radius: 50%; bottom: -6px; right: -6px; cursor: se-resize;"></div><div class="handle bottom" style="position: absolute; width: 8px; height: 8px; background: white; border: 1px solid rgb(51, 51, 51); border-radius: 50%; bottom: -6px; left: 50%; margin-left: -6px; cursor: s-resize;"></div><div class="handle bottom-left" style="position: absolute; width: 8px; height: 8px; background: white; border: 1px solid rgb(51, 51, 51); border-radius: 50%; bottom: -6px; left: -6px; cursor: sw-resize;"></div><div class="handle left" style="position: absolute; width: 8px; height: 8px; background: white; border: 1px solid rgb(51, 51, 51); border-radius: 50%; top: 50%; left: -6px; margin-top: -6px; cursor: w-resize;"></div><div style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); background: rgba(0, 0, 0, 0.7); color: white; padding: 2px 6px; border-radius: 3px; font-size: 12px; white-space: nowrap;"></div><div style="position: absolute; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; bottom: -45px;"><button style="padding: 8px 16px; background: rgb(76, 175, 80); color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;">开始记录</button><button style="padding: 8px 16px; background: rgb(244, 67, 54); color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;">取消记录</button></div></div></template></div><table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tbody><tr>
+      <td>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody><tr>
+            <td width="67%" valign="middle">
+              <p align="center">
+                <name>Jiangxin Sun (孙江鑫)</name>
+              </p>
+               <p>
+                I am a first year PhD student of the ELLIS PhD Program, supervised by Prof. <a href="https://disi.unitn.it/~sebe/">Nicu Sebe</a> in <a href="https://mhug.disi.unitn.it/#/">MHUG</a>, and co-supervised by Prof. <a href="https://cvg.cit.tum.de/members/cremers">Daniel Cremers</a> in <a href="https://cvg.cit.tum.de/home">TUM.</a>
+               
+              </p><p> My research interests lie in Computer Vision and Machine Learning.Currently, my focus is on interpretable autonomous driving system, semantic/instance segmentation prediction and human motion prediction.
+              </p>
+    
+              <p>
+                Prior to my PhD studies, I obtained my master's degree and bachelor's degree from Sun Yat-sen University in 2023 and 2020, where I was supervised by Prof. <a href="https://www.isee-ai.cn/~zhwshi/index.html">Wei-Shi Zheng</a> and Prof. <a href="https://www.isee-ai.cn/~hujianfang/index.htm">Jian-Fang Hu</a>. I was lucky to work closely with Prof. <a href="https://scholar.google.com/citations?user=_cUfvYQAAAAJ">Wenjun Zeng</a> and Prof. <a href="https://scholar.google.com/citations?user=ypSmZtIAAAAJ">Jianguo Zhang</a>.
+              </p>
+
+              <p align="center">
+                <a href="mailto:jiangxin.sun@unitn.it">Email</a> &nbsp;/&nbsp;
+                <a href="Jiangxin_files/Jiangxin_CV.pdf">CV</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=a3ckPz0AAAAJ">Scholar</a>
+              </p>
+            </td>
+            <td width="33%">
+              <img style="width: 100%" src="./Jiangxin_files/me.jpg" alt="PontTuset">
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tbody><tr>
+          <td width="100%" valign="middle">
+            <heading>Education</heading>
+            <p>
+            <strong>University of Trento</strong><br>
+            PhD in Computer Science • Nov. 2024 -  <br>
+            </p>
+            <p>
+            <strong>Sun Yat-Sen University</strong><br>
+            M.E. in Computer Science • Sep. 2020 - Jun. 2023 <br>
+            </p>
+            <p>
+            <strong>Sun Yat-Sen University</strong><br>
+            B.E. in Computer Science • Sep. 2016 - Jun. 2020 <br>
+            </p>
+          </td>
+        </tr>
+        </tbody></table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        
+        
+          <tbody><tr>
+          <td width="100%" valign="middle">
+            <heading>Research Experience</heading>
+            
+            <p>
+              <strong>ETH Zurich</strong><br>
+              Research Assistant • Aug. 2023 - Jul. 2024 <br>
+              Advisor: Prof. <a href="https://scholar.google.com/citations?user=-XCiamcAAAAJ">Fisher Yu</a> <br>
+            </p>
+
+            <p>
+              <strong>Microsoft Research Asia</strong><br>
+              Research Intern • Aug. 2021 - Jan. 2022 <br>
+              Advisor: Prof. <a href="https://scholar.google.com/citations?user=_cUfvYQAAAAJ">Wenjun Zeng</a> and Dr. <a href="https://www.chunyuwang.org/">Chunyu Wang</a> <br>
+            </p>
+
+            <p>
+              <strong>Huya Incorporated</strong><br>
+              Research Intern • Jul. 2020 - Jul. 2021 <br>
+              Advisor: Dr. <a href="https://xthan.github.io/">Xintong Han</a> <br>
+            </p>
+
+          </td>
+        </tr>
+        </tbody></table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody><tr>
+            <td width="100%" valign="middle">
+              <heading>Publications</heading><small style="color:black"> (* Equal Contribution)</small>
+            </td>
+          </tr>
+        </tbody></table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody><tr>
+          <td width="30%"><img src="./Jiangxin_files/pami.png" alt="PontTuset" width="350" style="border-style: none">
+            </td><td width="70%" valign="middle">
+                <papertitle><a href="https://ieeexplore.ieee.org/abstract/document/9353241">APANet: Auto-Path Aggregation for Future Instance Segmentation Prediction</a></papertitle>
+                <br>
+                <br>
+                <br>
+                Jian-Fang Hu*, <b>Jiangxin Sun</b>*, Zihang Lin, Jian-Huang Lai, Wenjun Zeng, Wei-Shi Zheng
+                <br>
+                <br>
+                <br>
+                <b>T-PAMI 2021</b>
+                <br>
+            </td>
+          </tr>
+          </tbody></table>
+        
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody><tr>
+          <td width="30%"><img src="./Jiangxin_files/nips23.png" alt="PontTuset" width="350" style="border-style: none">
+            </td><td width="70%" valign="middle">
+                <papertitle><a href="https://openreview.net/forum?id=v0GzRLvVp3">Temporal Continual Learning with Prior Compensation for Human Motion Prediction</a></papertitle>
+                <br>
+                <br>
+                Jianwei Tang, <b>Jiangxin Sun</b>, Xiaotong Lin, lifang zhang, Wei-Shi Zheng, Jian-Fang Hu
+                <br>
+                <br>
+                <b>NeurIPS 2023</b>
+                <br>
+            </td>
+          </tr>
+          </tbody></table>
+
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody><tr>
+          <td width="30%"><img src="./Jiangxin_files/nips22.png" alt="PontTuset" width="350" style="border-style: none">
+            </td><td width="70%" valign="middle">
+                <papertitle><a href="https://openreview.net/forum?id=88ubVLwWvGD">You Never Stop Dancing: Non-freezing Dance Generation via Bank-constrained Manifold Projection</a></papertitle>
+                <br>
+                <br>
+                <b>Jiangxin Sun</b>, Chunyu Wang, Huang Hu, Hanjiang Lai, Zhi Jin, Jian-Fang Hu
+                <br>
+                <br>
+                <b>NeurIPS 2022</b>
+                <br>
+            </td>
+          </tr>
+          </tbody></table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody><tr>
+          <td width="30%"><img src="./Jiangxin_files/nips21.png" alt="PontTuset" width="350" style="border-style: none">
+            </td><td width="70%" valign="middle">
+                <papertitle><a href="https://proceedings.neurips.cc/paper/2021/hash/fd9dd764a6f1d73f4340d570804eacc4-Abstract.html">Action-guided 3D Human Motion Prediction</a></papertitle>
+                <br>
+                <br>
+                <b>Jiangxin Sun</b>, Zihang Lin, Xintong Han, Jian-Fang Hu, Jia Xu, Wei-Shi Zheng
+                <br>
+                <br>
+                <b>NeurIPS 2021</b>
+                <br>
+            </td>
+          </tr>
+          </tbody></table>
+
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody><tr>
+            <td width="30%"><img src="./Jiangxin_files/iccv.png" alt="PontTuset" width="350" style="border-style: none">
+              </td><td width="70%" valign="middle">
+                  <papertitle><a href="https://openaccess.thecvf.com/content/ICCV2021/html/Lin_Predictive_Feature_Learning_for_Future_Segmentation_Prediction_ICCV_2021_paper.html">Predictive feature learning for future segmentation prediction</a></papertitle>
+                  <br>
+                  <br>
+                  Zihang Lin*, <b>Jiangxin Sun</b>*, Jian-Fang Hu, Qizhi Yu, Jian-Huang Lai, Wei-Shi Zheng
+                  <br>
+                  <br>
+                  <b>ICCV 2021</b>
+                  <br>
+              </td>
+            </tr>
+            </tbody></table>          
+            
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody><tr>
+          <td width="30%"><img src="./Jiangxin_files/mm19.png" alt="PontTuset" width="350" style="border-style: none">
+            </td><td width="70%" valign="middle">
+                <papertitle><a class="aligncenter" href="https://dl.acm.org/doi/abs/10.1145/3343031.3350949">Predicting future instance segmentation with contextual pyramid convlstms</a></papertitle>
+                <br>
+                <br>
+                <b>Jiangxin Sun</b>, Jiafeng Xie, Jian-Fang Hu, Zihang Lin, Jian-Huang Lai, Wenjun Zeng, Wei-Shi Zheng
+                <br>
+                <br>
+                <b>ACM MM 2019</b>
+                <br>
+            </td>
+          </tr>
+          </tbody></table>
+
+        </td></tr></tbody></table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody><tr>
+            <td>
+              <br>
+              <p align="right">
+                <font size="2">
+                  Updated Nov 2024.
+                </font>
+              </p>
+              <p align="right">
+                <font size="2">
+                  Special thanks to <a href="https://jonbarron.info/">Jon Barron</a> for website template.
+                </font>
+              </p>
+
+        </td></tr></tbody></table>
+
+        <script type="text/javascript">
+          try {
+            var pageTracker = _gat._getTracker("UA-7580334-1");
+            pageTracker._trackPageview();
+          } catch (err) {}
+        </script>
+        
+    
+  
+
+
+</body></html>
